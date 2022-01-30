@@ -1,32 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
 
 :root {
     --quicksand: 'Quicksand', sans-serif;
     --primary: #06B461;
-    --secondary: #4FCA8F;
+    --secondary: #C3EDD9;
     --tertiary: #25233A;
     --quaternary: #808080;
 }
 
+.logo h2 {
+    font-weight: bold;
+    color: var(--tertiary);
+}
 
-.nav-contact, .discount {
+.logo h2 span {
+    color: var(--primary);
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-contact {
+    color: #fff;
+}
+
+.nav-contact,
+.discount {
     background: var(--primary);
 }
 
 .btn {
     background: var(--primary);
     width: 160px;
+    transition: all .4s;
 }
 
+.btn:hover {
+    opacity: 85%;
+}
+
+.logo,
 .navbar,
 h3,
 h1,
-.btn {
+.btn,
+footer {
     font-family: var(--quicksand);
 }
 
 h3 {
     color: var(--primary);
+}
+
+ul {
+    list-style: none;
 }
 
 .contact-input input {
@@ -37,14 +66,57 @@ h3 {
     border: none;
 }
 
-.card {
+.pricings .card {
     border: none;
     outline: none;
-    /* box-shadow: 12px 12px 16px 0px rgba(0,0,0,0.25), -8px -8px 12px 0px rgba(255,255,255,0.3); */
-    /* background: #e6e6e6; */
+    width: 18rem;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px rgba(255, 255, 255, 0.7);
+    transition: all .4s;
+}
+
+.pricings .card ul {
+    list-style-image: url('../img/done_outline.svg');
+}
+
+@media screen and (min-width: 991px) {
+    .pricings .card:hover {
+        transform: translateY(-10px);
+    }
+
+    
+    .pricings .card:nth-child(2) {
+        transform: scale(1.1);
+    }
+
+    .pricings .card:hover:nth-child(2) {
+        transform: translateY(-10px) scale(1.1);
+    }
 }
 
 footer {
     background-color: var(--secondary);
+}
+
+footer h5 {
+    font-weight: bold;
+}
+
+footer .social a {
+    color: var(--primary);
+}
+
+footer a {
+    color: var(--tertiary);
+}
+
+@media screen and (max-width: 991px) {
+    .nav-contact {
+        display: none;
+    }
+
+    .pricings .card:not(:first-child) {
+        margin-top: 30px;
+    }
+
+    /* .pricings .card:nth-child(2){ transform: scale(1.12);} */
 }

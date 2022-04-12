@@ -109,6 +109,10 @@ footer a {
     color: var(--tertiary);
 }
 
+footer a:hover {
+    color: var(--primary);
+}
+
 @media screen and (max-width: 991px) {
     .nav-contact {
         display: none;

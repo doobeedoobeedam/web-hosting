@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
 
 :root {
@@ -9,63 +9,6 @@
     --quaternary: #808080;
 }
 
-.logo h2 {
-    font-weight: bold;
-    color: var(--tertiary);
-}
-
-.logo h2 span {
-    color: var(--primary);
-}
-
-a {
-    text-decoration: none;
-}
-
-.nav-contact {
-    color: #fff;
-}
-
-.nav-contact,
-.discount {
-    background: var(--primary);
-}
-
-.btn {
-    background: var(--primary);
-    width: 160px;
-    transition: all .4s;
-}
-
-.btn:hover {
-    opacity: 85%;
-}
-
-.logo,
-.navbar,
-h3,
-h1,
-.btn,
-footer {
-    font-family: var(--quicksand);
-}
-
-h3 {
-    color: var(--primary);
-}
-
-ul {
-    list-style: none;
-}
-
-.contact-input input {
-    flex: 1;
-    padding: 0.8em 0em 0.8em 1em;
-    background-color: #f2f2f2;
-    box-shadow: none;
-    border: none;
-}
-
 .pricings .card {
     border: none;
     outline: none;
@@ -74,44 +17,7 @@ ul {
     transition: all .4s;
 }
 
-.pricings .card ul {
-    list-style-image: url('../img/done_outline.svg');
-}
-
-@media screen and (min-width: 991px) {
-    .pricings .card:hover {
-        transform: translateY(-10px);
-    }
-
-    
-    .pricings .card:nth-child(2) {
-        transform: scale(1.1);
-    }
-
-    .pricings .card:hover:nth-child(2) {
-        transform: translateY(-10px) scale(1.1);
-    }
-}
-
-footer {
-    background-color: var(--secondary);
-}
-
-footer h5 {
-    font-weight: bold;
-}
-
-footer .social a {
-    color: var(--primary);
-}
-
-footer a {
-    color: var(--tertiary);
-}
-
-footer a:hover {
-    color: var(--primary);
-}
+.logo h2{font-weight:bold;color:var(--tertiary)}.logo h2 span{color:var(--primary)}a{text-decoration:none}.nav-contact{color:#fff}.nav-contact,.discount{background:var(--primary)}.btn{background:var(--primary);width:160px;transition:all .4s}.btn:hover{opacity:85%}.desc{color:var(--quaternary)}.logo,.navbar,h2.fw-bold,h3,h1,.card .card-title,.btn,footer h5{font-family:var(--quicksand);font-weight:600}h3{color:var(--primary)}ul{list-style:none}.contact-input input{flex:1;padding:0.8em 0em 0.8em 1em;background-color:#f2f2f2;box-shadow:none;border:none}.pricings .card ul {list-style-image: url('../img/done_outline.svg');}footer{background-color:var(--secondary)}footer .social a{color:var(--primary)}footer a{color:var(--quaternary)}footer a:hover{color:var(--primary)}
 
 @media screen and (max-width: 991px) {
     .nav-contact {
@@ -121,6 +27,18 @@ footer a:hover {
     .pricings .card:not(:first-child) {
         margin-top: 30px;
     }
+}
 
-    /* .pricings .card:nth-child(2){ transform: scale(1.12);} */
+@media screen and (min-width: 991px) {
+    .pricings .card:hover {
+        transform: translateY(-10px);
+    }
+
+    .pricings .card:nth-child(2) {
+        transform: scale(1.1);
+    }
+
+    .pricings .card:hover:nth-child(2) {
+        transform: translateY(-10px) scale(1.1);
+    }
 }
